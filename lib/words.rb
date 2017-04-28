@@ -1,5 +1,5 @@
 class Words
-  attr_reader(:word, :definition1, :definition2)
+attr_reader(:word, :id, :definition1, :definition2)
   @@words = []
 
   define_method(:initialize) do |attributes|

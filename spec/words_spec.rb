@@ -31,4 +31,15 @@ describe('words') do
     end
   end
 
+  describe(".find") do
+   it("returns a word by its id number") do
+     test_word = Words.new({:word=>"ocean"})
+     test_word.save()
+     test_word2 = Words.new({:word=>"mountain"})
+     test_word2.save()
+     expect(Words.find(test_word.id())).to(eq(test_word))
+   end
+ end
+
+
 end
