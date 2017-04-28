@@ -41,5 +41,11 @@ describe('words') do
    end
  end
 
+ describe("#id") do
+   it "returns the word's id" do
+     test_word = Words.new({:word=>"ocean"})
+     expect(test_word.id()).to(eq(1))
+   end
+ end
 
 end
