@@ -23,4 +23,12 @@ describe('words') do
     end
   end
 
+  describe("#save") do
+    it "saves a word to the class variable" do
+      test_word = Words.new({:word=>"ocean"})
+      test_word.save()
+      expect(Words.all()).to(eq([test_word]))
+    end
+  end
+
 end
