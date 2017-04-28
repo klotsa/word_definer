@@ -1,18 +1,10 @@
-<h2><%=@contact.first_name() %></h2>
+<h3>Here are all the definitions of this word:</h3>
 
-<% if @contact.emails().length() > 0 %>
-  <h3>Emails:</h3>
-  <% @contact.emails.each() do |email| %>
-    <p> <%= email.email_address() %></p>
-  <%end%>
-<%end%>
+<ul>
+  <% @word.words_spelled().each() do |word_spelled| %>
+    <li><a href="/definitions/<%= word_spelled.id() %>"><%= word_spelled.first() %> <%= word_spelled.second() %> <%= word_spelled.third() %></a></li>
+  <% end %>
+</ul>
 
-<h3>Add a new definition</h3>
-
-<form action="/words/<%=@word.id%>" method="post">
-  <label for="definition1">Definition</label>
-  <input type="text" name="definition1">
-  <label for="definition2">Additional Definition</label>
-  <input type="text" name="definition2">
-  <button type="submit" name="email">Add Definition(s)</button>
-</form>
+<a href="/words/<%=@word.id%>/definitions/new">Add a new definition</a>
+<a href="/">Return to Main Page</a>
