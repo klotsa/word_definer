@@ -1,0 +1,18 @@
+<h2><%=@contact.first_name() %></h2>
+
+<% if @contact.emails().length() > 0 %>
+  <h3>Emails:</h3>
+  <% @contact.emails.each() do |email| %>
+    <p> <%= email.email_address() %></p>
+  <%end%>
+<%end%>
+
+<h3>Add a new definition</h3>
+
+<form action="/words/<%=@word.id%>" method="post">
+  <label for="definition1">Definition</label>
+  <input type="text" name="definition1">
+  <label for="definition2">Additional Definition</label>
+  <input type="text" name="definition2">
+  <button type="submit" name="email">Add Definition(s)</button>
+</form>
