@@ -39,7 +39,7 @@ _contact Epicodus_
 ## Technologies Used
 * _Bootstrap_
 * _Sinatra_
-* _Ruby Gems - Launchy, rspec, pry, Capybara_
+* _Ruby Gems_
 * _Heroku_
 
 ### License
