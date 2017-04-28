@@ -1,4 +1,4 @@
-<h3>Here are all the definitions of this word:</h3>
+<h1>Here are the definitions of this word:</h1>
 
 <ul>
   <% @word.words_spelled().each() do |word_spelled| %>
@@ -6,5 +6,4 @@
   <% end %>
 </ul>
 
-<a href="/words/<%=@word.id%>/definitions/new">Add a new definition</a>
-<a href="/">Return to Main Page</a>
+<a href="/words/<%=@word.id%>/definitions/new"><h3>Add a new definition</h3></a>

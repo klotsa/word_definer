@@ -1,16 +1,16 @@
-<h1>Add a definition to <%= @word.name() %> </h1>
-
+<h1>Add a definition (or several) to the word: <%= @word.name() %> </h1>
+<br>
 <form action="/definitions_form" method="post">
   <input id='word_id' name='word_id' type='hidden' value='<%= @word.id() %>'>
 
-  <label for='first'>first:</label>
+  <label for='first'>first meaning:</label>
   <input id='first' name='first' type='text'>
 
-  <label for='second'>second:</label>
+  <label for='second'>second meaning:</label>
   <input id='second' name='second' type='text'>
 
-  <label for='third'>third:</label>
+  <label for='third'>third meaning:</label>
   <input id='third' name='third' type='text'>
 
-  <button type="submit">Add definition</button>
+  <button type="submit">Add definition(s)</button>
 </form>
