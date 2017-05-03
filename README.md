@@ -16,6 +16,7 @@ Make an application that contains two classes: One for Word, and one for Definit
 * _Run bundle command in terminal while in the directory_
 * _type: ruby app.rb in terminal_
 * _open web browser and go to localhost:4567_
+* _or open heroku https://mysterious-island-92503.herokuapp.com_
 
 
 ## Specs
